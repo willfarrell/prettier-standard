@@ -1,12 +1,5 @@
 #!/bin/bash
-DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )/../prettier-standard-cli"
-# prettier
-$DIR/node_modules/.bin/prettier --write --loglevel=warn $1
+DIR="$( cd "$( dirname "$0" )" && pwd )/$(dirname "$(readlink "$0")")"
 
-# standard
-PATTERN=${1}
-PATTERN=${PATTERN//\{js,[a-z,]*\}/js}
-PATTERN=${PATTERN//\{[a-z,]*,js,[a-z,]*\}/js}
-PATTERN=${PATTERN//\{[a-z,]*,js\}/js}
-
-$DIR/node_modules/.bin/standard --fix $PATTERN
+$DIR/bin-prettier.sh $1
+$DIR/bin-standard.sh $1

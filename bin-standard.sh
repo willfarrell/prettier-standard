@@ -1,9 +1,11 @@
 #!/bin/bash
-DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )/../prettier-standard-cli"
+DIR="$( cd "$( dirname "$0" )" && pwd )/$(dirname "$(readlink "$0")")/node_modules/.bin"
 
 PATTERN=${1}
 PATTERN=${PATTERN//\{js,[a-z,]*\}/js}
 PATTERN=${PATTERN//\{[a-z,]*,js,[a-z,]*\}/js}
 PATTERN=${PATTERN//\{[a-z,]*,js\}/js}
 
-$DIR/node_modules/.bin/standard --fix $PATTERN
+if [ "$PATTERN" == "*.js" ]; then
+  $DIR/standard --fix $PATTERN
+fi
