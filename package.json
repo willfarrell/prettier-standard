@@ -1,5 +1,5 @@
 {
-  "name": "prettier-standard",
+  "name": "prettier-standard-cli",
   "version": "11.0.0",
   "description": "prettier & standard together",
   "bin": {
