@@ -6,7 +6,7 @@
   <br>
 </h1>
 
-Just a simple wrapper around [Prettier](https://prettier.io/) & [Standard](https://standardjs.com/) with auto-fix enabled on both.
+Just a simple wrapper around [Prettier](https://prettier.io/) & [Standard](https://standardjs.com/) with auto-fix enabled.
 
 ## Why
 - Simplify `package.json` use
@@ -15,22 +15,22 @@ Just a simple wrapper around [Prettier](https://prettier.io/) & [Standard](https
 
 ## Getting Started
 ```bash
-npm i -D @willfarrell/prettier-standard
+npm i -D prettier-standard-cli
 ```
 
 ## Deployment
 ### cli
-- `prettier 'styles/*.{json,js}`
+- `prettier 'styles/*.{json,js}'`
 - `standard 'src/*.js'`
-- `prettier-standard 'src/**/*.{css,json,js}`
+- `prettier-standard 'src/**/*.{css,json,js}'`
 
 ### package.json
 
 ```json
 {
   "devDependencies": {
-  	"lint-staged":"*",
-  	"husky":"*",
+    "lint-staged":"*",
+    "husky":"*",
     "@willfarrell/prettier-standard":"*"
   },
   "scripts": {

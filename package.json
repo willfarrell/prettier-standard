@@ -1,6 +1,6 @@
 {
   "name": "prettier-standard",
-  "version": "0.1.0",
+  "version": "11.0.0",
   "description": "prettier & standard together",
   "bin": {
     "prettier": "bin-prettier.sh",
@@ -28,7 +28,7 @@
   "homepage": "https://github.com/willfarrell/prettier-standard#readme",
   "dependencies": {
     "glob-cli": "^1.0.0",
-    "prettier": "^1.12.1",
-    "standard": "^11.0.1"
+    "prettier": "^1.12.0",
+    "standard": "^11.0.0"
   }
 }
