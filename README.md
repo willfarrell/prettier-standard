@@ -60,7 +60,11 @@ npm i -D prettier-standard-cli
     "lint": "prettier 'src/**/*.{css,json,js}' && standard 'src/**/*.js'",
   },
   "lint-staged": {
-    "src/**/*.{css,json,js}": [
+    "src/**/*.{css,json}": [
+      "prettier",
+      "git add"
+    ],
+    "src/**/*.js": [
       "prettier",
       "standard",
       "git add"
