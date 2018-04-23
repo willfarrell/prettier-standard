@@ -1,5 +1,5 @@
 #!/bin/bash
-DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )/../prettier-standard-cli"
 # prettier
 $DIR/node_modules/.bin/prettier --write --loglevel=warn $1
 

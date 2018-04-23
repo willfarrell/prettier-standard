@@ -1,5 +1,5 @@
 #!/bin/bash
-DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )/../prettier-standard-cli"
 
 PATTERN=${1}
 PATTERN=${PATTERN//\{js,[a-z,]*\}/js}
