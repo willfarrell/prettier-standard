@@ -46,7 +46,7 @@ npm i -D prettier-standard-cli
 }
 ```
 
-### package.json standalone
+### package.json standalone equivalent
 ```json
 {
   "devDependencies": {
@@ -57,16 +57,16 @@ npm i -D prettier-standard-cli
   },
   "scripts": {
     "precommit":"lint-staged",
-    "lint": "prettier 'src/**/*.{css,json,js}' && standard 'src/**/*.js'",
+    "lint": "prettier --write --loglevel warn 'src/**/*.{css,json,js}' && standard --fix 'src/**/*.js'",
   },
   "lint-staged": {
     "src/**/*.{css,json}": [
-      "prettier",
+      "prettier --write",
       "git add"
     ],
     "src/**/*.js": [
-      "prettier",
-      "standard",
+      "prettier --write",
+      "standard --fix",
       "git add"
     ],
   }
