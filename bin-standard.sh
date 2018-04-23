@@ -6,6 +6,6 @@ PATTERN=${PATTERN//\{js,[a-z,]*\}/js}
 PATTERN=${PATTERN//\{[a-z,]*,js,[a-z,]*\}/js}
 PATTERN=${PATTERN//\{[a-z,]*,js\}/js}
 
-if [ "$PATTERN" == "*.js" ]; then
-  $DIR/standard --fix $PATTERN
+if [ -z ${PATTERN##*.js} ]; then
+  $DIR/standard --fix "$PATTERN"
 fi
