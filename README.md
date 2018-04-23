@@ -31,7 +31,7 @@ npm i -D prettier-standard-cli
   "devDependencies": {
     "lint-staged":"*",
     "husky":"*",
-    "@willfarrell/prettier-standard":"*"
+    "prettier-standard-cli":"*"
   },
   "scripts": {
     "precommit":"lint-staged",
