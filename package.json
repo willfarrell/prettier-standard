@@ -1,0 +1,34 @@
+{
+  "name": "prettier-standard",
+  "version": "0.1.0",
+  "description": "prettier & standard together",
+  "bin": {
+    "prettier": "bin-prettier.sh",
+    "standard": "bin-standard.sh",
+    "prettier-standard": "bin-prettier-standard.sh"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://willfarrell@github.com/willfarrell/prettier-standard.git"
+  },
+  "keywords": [
+    "prettier",
+    "prettierjs",
+    "standard",
+    "standardjs"
+  ],
+  "author": "willfarrell",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/willfarrell/prettier-standard/issues"
+  },
+  "homepage": "https://github.com/willfarrell/prettier-standard#readme",
+  "dependencies": {
+    "glob-cli": "^1.0.0",
+    "prettier": "^1.12.1",
+    "standard": "^11.0.1"
+  }
+}
