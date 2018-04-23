@@ -11,7 +11,6 @@ Just a simple wrapper around [Prettier](https://prettier.io/) & [Standard](https
 ## Why
 - Simplify `package.json` use
 - Filter non-`js` file extensions from `standard`, thinks `json` is `js`
-- Fix bash glob to be recursive, you must pass in a string to enable (See examples)
 
 ## Getting Started
 ```bash
@@ -41,7 +40,7 @@ npm i -D prettier-standard-cli
     "src/**/*.{css,json,js}": [
       "prettier-standard",
       "git add"
-    ],
+    ]
   }
 }
 ```
@@ -68,7 +67,7 @@ npm i -D prettier-standard-cli
       "prettier --write",
       "standard --fix",
       "git add"
-    ],
+    ]
   }
 }
 ```
@@ -76,7 +75,6 @@ npm i -D prettier-standard-cli
 ## Built With
 - [Prettier](https://prettier.io/)
 - [Standard](https://standardjs.com/)
-- [glob](https://github.com/isaacs/node-glob)
 
 ## Authors
 - [willfarrell](https://github.com/willfarrell/)
