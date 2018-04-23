@@ -46,6 +46,29 @@ npm i -D prettier-standard-cli
 }
 ```
 
+### package.json standalone
+```json
+{
+  "devDependencies": {
+    "lint-staged":"*",
+    "husky":"*",
+    "prettier":"*",
+    "standard":"*"
+  },
+  "scripts": {
+    "precommit":"lint-staged",
+    "lint": "prettier 'src/**/*.{css,json,js}' && standard 'src/**/*.js'",
+  },
+  "lint-staged": {
+    "src/**/*.{css,json,js}": [
+      "prettier",
+      "standard",
+      "git add"
+    ],
+  }
+}
+```
+
 ## Built With
 - [Prettier](https://prettier.io/)
 - [Standard](https://standardjs.com/)
