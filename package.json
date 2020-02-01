@@ -30,7 +30,7 @@
   },
   "homepage": "https://github.com/willfarrell/prettier-standard#readme",
   "dependencies": {
-    "prettier": "^1.12.0",
-    "standard": "^11.0.0"
+    "prettier": "^1.19.0",
+    "standard": "^14.3.0"
   }
 }
