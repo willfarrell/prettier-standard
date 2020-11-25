@@ -1,6 +1,6 @@
 {
   "name": "prettier-standard-cli",
-  "version": "14.3.3",
+  "version": "16.0.3",
   "description": "prettier & standard together",
   "bin": {
     "prettier": "bin-prettier.sh",
@@ -30,7 +30,7 @@
   },
   "homepage": "https://github.com/willfarrell/prettier-standard#readme",
   "dependencies": {
-    "prettier": "^2.0.2",
-    "standard": "^14.3.3"
+    "prettier": "^2.2.0",
+    "standard": "^16.0.3"
   }
 }
