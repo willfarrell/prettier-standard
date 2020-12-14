@@ -1,4 +1,5 @@
 package-lock.json
+.npmrc
 
 # Logs
 logs
@@ -62,4 +63,8 @@ typings/
 # IDE
 .idea
 *.iml
-.npmrc
+
+
+# OS
+.DS_Store
+
