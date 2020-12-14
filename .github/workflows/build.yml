@@ -48,7 +48,7 @@ jobs:
         if: env.change
         name: Version bump
         run: |
-          echo "tag=$(npm version patch)" >> $GITHUB_ENV
+          echo "tag=$(npm version patch --no-git-tag-version)" >> $GITHUB_ENV
       -
         if: env.change
         name: Commit & push changes
