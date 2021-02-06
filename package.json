@@ -1,6 +1,6 @@
 {
   "name": "prettier-standard-cli",
-  "version": "16.0.11",
+  "version": "16.0.12",
   "description": "prettier & standard together",
   "bin": {
     "prettier": "bin-prettier.sh",
